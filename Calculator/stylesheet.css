@@ -1,0 +1,23 @@
+/*
+*
+* Button Color: #FFBD45
+*
+*
+*/
+
+body{
+	font-family: 'Roboto Mono', monospace;
+}
+
+div#calculator-body{
+	 margin: 0 auto;
+     width: 400px;
+}
+
+div#calculator-display{
+	display:block;
+	margin-top: 20px;
+	outline: 2px solid #9DD9D2;
+	text-align: right;
+}
+

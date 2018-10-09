@@ -8,21 +8,21 @@ function scrollDetect(){
       if (currentScroll > 0 && lastScroll <= currentScroll){
         lastScroll = currentScroll;
 		//when scrolling down
-		var navbar = document.getElementById("navbar-fixed");
+		var navbar = document.querySelector("div.navbar-fixed");
 		if(navbar != null){
-			navbar.id = "navbar-absolute";
+			navbar.className = "navbar-absolute";
 		}
       }else{
         lastScroll = currentScroll;
 		//when scrolling up
-		var navbar = document.getElementById("navbar-absolute");
+		var navbar = document.querySelector("div.navbar-absolute");
 		if(navbar != null && scrollPositon > 0){
-			navbar.id = "navbar-fixed";
+			navbar.className = "navbar-fixed";
 			
 		}
 		else if(scrollPositon < 1){
-			navbar = document.getElementById("navbar-fixed");
-			navbar.id = "navbar-absolute";
+			navbar = document.querySelector("div.navbar-fixed");
+			navbar.className = "navbar-absolute";
 		}
       }
   };
